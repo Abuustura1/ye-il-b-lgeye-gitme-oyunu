@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Küp İçinde 3D Oyun — Fare + Pointer Lock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game"></div>
+
+  <div id="hud">
+    <div id="controls">W/A/S/D: hareket • Space: zıpla • R: yeniden başlat • C: kamera değiştir • Fare: bakış</div>
+    <div id="mode">Kamera: Arkadan takip</div>
+    <div id="statusMessage" class="hidden"></div>
+  </div>
+
+  <!-- Kamera başlat butonu (pointer lock) -->
+  <div id="cameraStartWrap">
+    <button id="startCameraBtn">Kamerayı Başlat</button>
+    <div id="cameraHint">Başlamak için tıkla — fare serbest hareket edecek. Çıkmak için ESC.</div>
+  </div>
+
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
